@@ -22,7 +22,21 @@
         </nav> 
         <article class="content">
           <h2>contact</h2>
-         
+          <form id="contact-form" action="" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+          
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          
+            <input type="submit" value="Send Message">
+          </form>
         </article>
         <aside class="side">sidebar</aside>
         <div class="ad">Advertising</div>

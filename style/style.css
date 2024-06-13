@@ -98,7 +98,9 @@
   li{
     border-bottom: none;
   }
-
+/* form{
+    align-content: center;
+} */
 /********* styling *********/
 header{
     background-color:rgb(23, 7, 75);
@@ -145,15 +147,54 @@ li a:hover{
 
 
 
-/********* font awsome icons **********/
+/********* font awsome icons *********/
 
 i{
     font-size:25px;
     color: rgb(23, 7, 75);
 }
 
-footer{
-position: fixed;
-bottom: 0;
-margin: 0px 20px 30px 15px;
-}
+/********* form styling *********/
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(24, 7, 7, 0.1);
+    width: 300px;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  #contact-form label {
+    margin-bottom: 10px;
+  }
+
+  #contact-form input, #contact-form textarea {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #contact-form textarea {
+    height: 100px;
+  }
+
+  #contact-form input[type="submit"] {
+    background-color: #f7dc6f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+  }
+
+  #contact-form input[type="submit"]:hover {
+    background-color: #ffc107;
+  }
