@@ -112,9 +112,10 @@ h1{
         margin: 0 auto;
         padding: 15px;
         border: 5px solid #9b9be1;
-        box-shadow: 0px 3px #8d8d8d;
+        /* box-shadow: 0px 3px #8d8d8d; */
         text-align: center;
 }
+
 body{
     background-color:rgb(221, 216, 232);
     font-family: 'Roboto', sans-serif;
@@ -126,7 +127,7 @@ body{
 li:hover .hobbies{
     display:block;
 }
-ul{
+/* ul{
     list-style-type: none;
     margin:0px;
     padding:10px;
@@ -134,16 +135,17 @@ ul{
 }
 li a{
     background-color: #9b9be1;
-    border: 1px solid black;
+    border-radius:2px;
     list-style-type: none;
     text-decoration: none;
     color:rgb(23, 7, 75);
     padding:10px 30px;
+    margin-bottom: 2px;
 }
 li a:hover{
     background-color: rgb(23, 7, 75);
     color:#f880f2;
-}
+} */
 
 
 
@@ -198,3 +200,70 @@ i{
   #contact-form input[type="submit"]:hover {
     background-color: #ffc107;
   }
+
+footer{
+  background-color: #eee;
+}
+/********* CSS for my fancy button *********/
+.b53 {
+  background-color: rgb(23, 7, 75);
+  /* border: 0 solid #E5E7EB; */
+  box-sizing: border-box;
+  color: #f880f2;
+  display: flex;
+  /* font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+  font-size: 1.25rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  /* text-decoration-thickness: auto; */
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+ 
+  /* user-select: none; */
+  /* -webkit-user-select: none; */
+  /* touch-action: manipulation; */
+}
+a{
+  text-decoration: none;
+  color:#f880f2;
+}
+.b53:focus {
+  outline: 0;
+}
+
+ .b53:after a:after{
+  content: '';
+  position: absolute;
+  border: 2px solid #9b9be1;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+  translate: -10px 10px;
+}
+
+.b53:hover:after {
+  bottom: 12px;
+  left: 12px;
+}
+.about{
+  padding:.75rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .b53{
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+  .about{
+    padding:.75rem 1.5rem;
+  }
+}
