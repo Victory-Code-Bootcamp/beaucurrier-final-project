@@ -73,8 +73,11 @@
         display: flex;
         justify-content: space-between;
     }
+    .card{
+      width:100%;
+    }
 }
-/********* final breakpoint at 700px *********/
+/********* breakpoint at 700px *********/
 @media (min-width: 700px) {
     .wrapper {
       grid-template-columns: 1fr 4fr 1fr;
@@ -87,7 +90,11 @@
     nav ul {
       flex-direction: column;
     }
+    .card{
+      width:100%;
+    }
   }
+
   .glow{
     transform: rotate(-1.5deg);
   }
@@ -97,6 +104,7 @@
   }
   li{
     border-bottom: none;
+    margin-bottom: 3px;;
   }
 /* form{
     align-content: center;
@@ -134,18 +142,22 @@ li:hover .hobbies{
     width: auto;
 }
 li a{
+
     background-color: #9b9be1;
     border-radius:2px;
+
     list-style-type: none;
     text-decoration: none;
-    color:rgb(23, 7, 75);
+    color:#f880f2;
     padding:10px 30px;
     margin-bottom: 2px;
 }
 li a:hover{
+
     background-color: rgb(23, 7, 75);
     color:#f880f2;
 } */
+
 
 
 
@@ -198,6 +210,7 @@ i{
   }
 
   #contact-form input[type="submit"]:hover {
+
     background-color: #e60073;
   }
 
@@ -378,3 +391,4 @@ span{
 .phone.card span, .email.card span, .social.card span {
   margin-right: 10px; /* add some space between the icon and the text */
 }
+
